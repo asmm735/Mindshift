@@ -1,0 +1,259 @@
+/* Add these new styles and modify existing ones */
+
+/* Add these new styles and modify existing ones */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-image: url('../loginpage/image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 5rem; /* Add padding equal to header height to prevent content hiding */
+}
+
+/* Main container layout */
+.main-container {
+    display: flex;
+    max-width: auto;
+    margin: 30px auto;
+    gap: 30px;
+    padding: 0 20px;
+    margin-top: 2rem; /* Additional spacing below navbar */
+}
+
+/* Rest of your existing CSS remains the same */
+header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 5rem;
+    background: #943c64;
+    color: black;
+}
+
+/* ... rest of your existing CSS ... */
+
+/* Left container (input/notes) */
+.left-container {
+    flex: 1;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+}
+
+/* Right container (graph) */
+.right-container {
+    flex: 1;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Mood scale adjustments */
+.mood-scale {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.mood-level {
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+    text-align: center;
+    padding: 5px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    min-width: 50px;
+}
+/* Mood selection container */
+.mood-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    
+}
+
+/* Mood buttons container */
+.mood-buttons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Mood buttons - top row */
+.top-moods {
+    margin-bottom: 15px;
+}
+
+/* Mood buttons - bottom row */
+.bottom-moods {
+    margin-top: 15px;
+}
+
+/* Individual mood button */
+.mood-btn {
+    font-size: 2rem;
+    cursor: pointer;
+    background: none;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.mood-btn:hover {
+    transform: scale(1.1);
+    background-color: #f0f0f0;
+}
+
+.mood-btn.selected {
+    transform: scale(1.15);
+    background-color: #e0f7fa;
+    border-color: #4CAF50;
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.3);
+}
+
+/* Save button */
+#save-btn {
+    padding: 1rem;
+    background-color: #943c64;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 20px 0;
+    width: fit-content;
+}
+
+#save-btn:hover {
+    background-color: #45a049;
+}
+
+/* Notes section */
+.notes-section {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.notes-section h3 {
+    margin-bottom: 15px;
+}
+
+.note-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    resize: vertical;
+    min-height: 80px;
+}
+  
+
+  header nav {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-right: 2rem; /* Add some right margin to the nav */
+  }
+  
+  header a {
+    text-decoration: none;
+    font-weight: 500;
+    color: inherit;
+    padding: 1rem;  /* Add padding instead of fixed height */
+    display: inline-block; /* Change from grid to inline-block */
+  }
+header nav > a:hover {
+  color: rgb(255 255 255 / 96%);
+}
+
+  header span.material-symbols-outlined {
+    font-size: 26px;
+    width: 32px;
+  }
+/* Add to your existing CSS */
+#depression-alert {
+    background-color: #fff3e0;
+    padding: 15px;
+    border-left: 5px solid #A888B5;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#depression-alert h3 {
+    color: #d32f2f;
+    margin-top: 0;
+}
+
+#depression-alert .resources {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #A888B5;
+}
+
+#depression-alert a {
+    color: #943c64;
+    text-decoration: underline;
+}
+
+#depression-alert a:hover {
+    color: #d32f2f;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+    
+    .left-container, .right-container {
+        width: 100%;
+    }
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+  .logo-img {
+    width: 3.5rem;
+    height: 3.5rem;  /* Made height equal to width for perfect circle */
+    border-radius: 50%;
+    padding: 0;
+    object-fit: cover;  /* Ensures image fills the circle properly */
+    display: block;     /* Removes any unwanted spacing */
+    margin: auto;       /* Centers the image vertically */
+  }
+  

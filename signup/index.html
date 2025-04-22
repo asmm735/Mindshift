@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sign Up - Mindshift</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Create your <span class="app-name">Mindshift</span> account</h1>
+        <form id="signup-form">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required />
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required />
+            </div>
+            <div class="input-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required />
+            </div>
+            <button type="submit"><a href="../homepage/index.html">Signup</a></button>
+        </form>
+        <p class="login-link">Already have an account? <a href="../loginpage/index.html">Login</a></p>
+        <p id="error-message" class="error-message"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

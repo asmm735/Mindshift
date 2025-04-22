@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    background-image: url('../loginpage/image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main {
+    padding: 2rem;
+    margin-top: 5rem; /* Add gap between navbar and content */
+}
+
+.container {
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem ;
+    max-width: 35rem;
+    margin: 6rem auto 20px auto; /* Adjust top margin to be below navbar with gap */
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container.dark-mode {
+    background-color: #2f2f2f;
+    color: #fff;
+}
+.box-content{
+    padding: 3.5rem;
+}
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.profile h2 {
+    margin: 0;
+}
+.section {
+    margin-bottom: 20px;
+}
+.section h3 {
+    margin-bottom: 10px;
+}
+.section p {
+    margin: 5px 0;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.button:hover {
+    background-color: #0056b3;
+}
+.switch {
+    display: flex;
+    align-items: center;
+}
+.switch input {
+    margin-left: 10px;
+}
+.activities {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+.logout {
+    text-align: center;
+}
+.logout .button {
+    background-color: #dc3545;
+}
+.logout .button:hover {
+    background-color: #a71d2a;
+}
+header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 5rem;
+    background: #943c64;
+    color: black;
+}
+
+body > main {
+    padding-top: 6rem; /* Add padding top to main to create gap below fixed header */
+}
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-right: 2rem; /* Add some right margin to the nav */
+  }
+  
+  header a {
+    text-decoration: none;
+    font-weight: 500;
+    color: inherit;
+    padding: 1rem;  /* Add padding instead of fixed height */
+    display: inline-block; /* Change from grid to inline-block */
+  }
+header nav > a:hover {
+  color: rgb(255 255 255 / 96%);
+}
+
+  header span.material-symbols-outlined {
+    font-size: 26px;
+    width: 32px;
+  }
+  .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+  .logo-img {
+    width: 3.5rem;
+    height: 3.5rem;  /* Made height equal to width for perfect circle */
+    border-radius: 50%;
+    padding: 0;
+    object-fit: cover;  /* Ensures image fills the circle properly */
+    display: block;     /* Removes any unwanted spacing */
+    margin: auto;       /* Centers the image vertically */
+  }
+

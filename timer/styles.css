@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url('../loginpage/image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 5rem;
+    background: #943c64;
+    color: black;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-right: 2rem; /* Add some right margin to the nav */
+  }
+  
+  header a {
+    text-decoration: none;
+    font-weight: 500;
+    color: inherit;
+    padding: 1rem;  /* Add padding instead of fixed height */
+    display: inline-block; /* Change from grid to inline-block */
+  }
+header nav > a:hover {
+  color: rgb(255 255 255 / 96%);
+}
+
+  header span.material-symbols-outlined {
+    font-size: 26px;
+    width: 32px;
+  }
+  .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+  .logo-img {
+    width: 3.5rem;
+    height: 3.5rem;  /* Made height equal to width for perfect circle */
+    border-radius: 50%;
+    padding: 0;
+    object-fit: cover;  /* Ensures image fills the circle properly */
+    display: block;     /* Removes any unwanted spacing */
+    margin: auto;       /* Centers the image vertically */
+  }
+  .container {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .progress-ring {
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+    background: conic-gradient(#943c64,0% 0%, #eee 0% 100%);
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .progress-circle {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .timer-display {
+    font-size: 2rem;
+    margin: 20px 0;
+  }
+  
+  .controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .button {
+    width: 15rem;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #943c64;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #943c64;
+  }
+  img{
+    border-radius: 50%;
+   
+    width: 100%;
+    height: 100%;
+  }

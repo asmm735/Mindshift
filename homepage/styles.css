@@ -1,0 +1,226 @@
+html {
+    box-sizing: border-box;
+      overflow-y: scroll;
+      height: 100%;
+      -webkit-overflow-scrolling: touch;
+      scroll-behavior: smooth;
+    }
+    
+    
+    
+    body {
+      font-family: "Euclid Circular A", "Poppins";
+      color: white;
+      background: #f8e4f4;
+      text-align: center;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      border: none;
+      outline: none;
+      box-sizing: border-box;
+    }
+    
+    html, body {
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+      border: none;
+      width: 100%;
+      min-height: 100%;
+    }
+    .container {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-wrap: nowrap;
+      margin: 0;
+      padding: 0;
+      border: none;
+    }
+    
+    header {
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      height: 5rem;
+      background: #A888B5;
+      color: black;
+    }
+    
+    header nav {
+      display: flex;
+      align-items: center;
+      gap: 35px;
+      margin-right: 2rem; /* Add some right margin to the nav */
+    }
+    
+    header a {
+      text-decoration: none;
+      font-weight: 500;
+      color: inherit;
+      padding: 1rem;  /* Add padding instead of fixed height */
+      display: inline-block; /* Change from grid to inline-block */
+    }
+  header nav > a:hover {
+    color: rgb(255 255 255 / 96%);
+  }
+  
+    header span.material-symbols-outlined {
+      font-size: 26px;
+      width: 32px;
+    }
+    
+    .panel img{
+      width: 40%;
+      height: 100%;
+      mix-blend-mode: multiply;
+    }
+    
+    h2 {
+      margin: 50px 0 20px;
+      font-size: 2.5rem;
+    }
+    
+    p {
+      font-size: 26px;
+    }
+    
+    .panel {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 5px 80px;
+      width: 100vw; 
+      transition: box-shadow 3s ease;
+    }
+    
+    .container .panel {
+      flex-direction: row;
+      gap: 40px;
+      text-align: left;
+    }
+    
+    .container .panel img {
+      translate: 0 16px;
+    }
+    
+    .container h2 {
+      margin: 0 0 10px;
+    }
+    
+    .container p {
+      margin: 0;
+    }
+    
+    .container .panel:nth-child(odd) {
+      background: #A888B5;
+    }
+    .container .panel:nth-child(even) {
+      color: black;
+    }
+  
+  
+    .Home{
+      background: #f8e4f4;
+      color: black;
+      text-align: left;
+      opacity: 0.9;
+    }
+    .alumni{
+      float: right;
+      padding-top: 50px;
+    }
+    #Parallel{
+      float: left;
+      width: auto;
+    }
+    button{
+      height: 40px;
+      width: 35%;
+      font-size: 1.5rem;
+      border: 5px solid #943c64;
+      color: #943c64;
+      font-weight: bolder;
+      background-color: #f8e4f4;
+    }
+    
+    footer{
+      background-color: #021526;
+    }
+  
+  .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+  
+  .hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 3);
+  }
+  a{
+    text-decoration: none;
+  }
+  
+  .logo-img {
+    width: 3.5rem;
+    height: 3.5rem;  /* Made height equal to width for perfect circle */
+    border-radius: 50%;
+    padding: 0;
+    object-fit: cover;  /* Ensures image fills the circle properly */
+    display: block;     /* Removes any unwanted spacing */
+    margin: auto;       /* Centers the image vertically */
+  }
+  
+  
+  /* Reset some default styles */
+  body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: scroll; /* Enable horizontal scrolling */
+  }
+  
+  /* Container for horizontal scrolling */
+  .container {
+    display: flex;
+    flex-direction: row;
+    width: 300vw; /* 3 pages, each 100% of the viewport width */
+    height: 100vh; /* Full viewport height */
+  }
+  
+  /* Each section (panel) takes up the full viewport */
+  .panel {
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Styling for images */
+  .panel img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  #Therapists{
+    color: black;
+  }
